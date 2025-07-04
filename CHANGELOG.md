@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.6 (2025-07-04)
+
+- added `getComuniListFromProvince` service
+- added `getProvinceFromComune` service
+- added `getProvinceFromCAP` service
+- added `getCodiceISTATFromComune` service
+- added `getCodiceISTATFromCap` service
+
 ## 1.0.5 (2025-03-18)
 
 - added Symfony 7.3.* compatibility
