@@ -56,13 +56,13 @@ class MetareteComune
     private ?string $codiceBelfiore = null;
 
     #[ORM\Column(type: 'decimal', precision: 10, scale: 7)]
-    private ?float $lat = null;
+    private ?string $lat = null;
 
     #[ORM\Column(type: 'decimal', precision: 10, scale: 7)]
-    private ?float $lon = null;
+    private ?string $lon = null;
 
     #[ORM\Column(type: 'decimal', precision: 10, scale: 4)]
-    private ?float $superficieKmq = null;
+    private ?string $superficieKmq = null;
 
     public function __toString(): string
     {
@@ -228,37 +228,36 @@ class MetareteComune
         return $this;
     }
 
-    public function getLat(): ?float
+    public function getLat(): ?string
     {
         return $this->lat;
     }
 
-    public function setLat(?float $lat): self
+    public function setLat(?string $lat): self
     {
         $this->lat = $lat;
         return $this;
     }
 
-    public function getLon(): ?float
+    public function getLon(): ?string
     {
         return $this->lon;
     }
 
-    public function setLon(?float $lon): self
+    public function setLon(?string $lon): self
     {
         $this->lon = $lon;
         return $this;
     }
 
-    public function getSuperficieKmq(): ?float
+    public function getSuperficieKmq(): ?string
     {
         return $this->superficieKmq;
     }
 
-    public function setSuperficieKmq(?float $superficieKmq): self
+    public function setSuperficieKmq(?string $superficieKmq): self
     {
         $this->superficieKmq = $superficieKmq;
         return $this;
     }
 }
-
